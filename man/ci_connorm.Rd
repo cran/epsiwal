@@ -4,8 +4,16 @@
 \alias{ci_connorm}
 \title{ci_connorm .}
 \usage{
-ci_connorm(y, A, b, eta, Sigma = NULL, p = c(level/2, 1 - (level/2)),
-  level = 0.05, Sigma_eta = Sigma \%*\% eta)
+ci_connorm(
+  y,
+  A,
+  b,
+  eta,
+  Sigma = NULL,
+  p = c(level/2, 1 - (level/2)),
+  level = 0.05,
+  Sigma_eta = Sigma \%*\% eta
+)
 }
 \arguments{
 \item{y}{an \eqn{n} vector, assumed multivariate normal with mean \eqn{\mu}
@@ -70,7 +78,8 @@ with application to the Lasso." Ann. Statist. 44, no. 3 (2016): 907-927.
 doi:10.1214/15-AOS1371. \url{https://arxiv.org/abs/1311.6238}
 }
 \seealso{
-the CDF function, \code{pconnorm}.
+the CDF function, \code{\link{pconnorm}}, the MLE function, \code{\link{mle_connorm}},
+the special case code for conditioning on the max, \code{\link{ci_connorm_max}}
 }
 \author{
 Steven E. Pav \email{shabbychef@gmail.com}

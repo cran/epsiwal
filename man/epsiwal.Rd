@@ -2,8 +2,8 @@
 % Please edit documentation in R/epsiwal.r
 \docType{package}
 \name{epsiwal}
-\alias{epsiwal}
 \alias{epsiwal-package}
+\alias{epsiwal}
 \title{Exact Post Selection Inference with Applications to the Lasso.}
 \description{
 Exact Post Selection Inference with Applications to the Lasso.
@@ -38,9 +38,23 @@ with application to the Lasso." Ann. Statist. 44, no. 3 (2016): 907-927.
 doi:10.1214/15-AOS1371. \url{https://arxiv.org/abs/1311.6238}
 
 Pav, S. E. "Conditional inference on the asset with maximum Sharpe ratio."
-Arxiv e-print (2019). \url{http://arxiv.org/abs/1906.00573}
+Arxiv e-print (2019). \url{https://arxiv.org/abs/1906.00573}
+
+Pav, S. E.  "Post selection estimation of Sharpe ratios."
+Arxiv e-print (2026). \url{https://arxiv.org/abs/2606.01650}
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/shabbychef/epsiwal}
+  \item Report bugs at \url{https://github.com/shabbychef/epsiwal/issues}
+}
+
 }
 \author{
 Steven E. Pav \email{shabbychef@gmail.com}
+
+\strong{Maintainer}: Steven E. Pav \email{shabbychef@gmail.com} (\href{https://orcid.org/0000-0002-4197-6195}{ORCID})
+
 }
 \keyword{package}

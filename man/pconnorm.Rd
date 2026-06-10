@@ -4,9 +4,18 @@
 \alias{pconnorm}
 \title{pconnorm .}
 \usage{
-pconnorm(y, A, b, eta, mu = NULL, Sigma = NULL, Sigma_eta = Sigma
-  \%*\% eta, eta_mu = as.numeric(t(eta) \%*\% mu), lower.tail = TRUE,
-  log.p = FALSE)
+pconnorm(
+  y,
+  A,
+  b,
+  eta,
+  mu = NULL,
+  Sigma = NULL,
+  Sigma_eta = Sigma \%*\% eta,
+  eta_mu = as.numeric(t(eta) \%*\% mu),
+  lower.tail = TRUE,
+  log.p = FALSE
+)
 }
 \arguments{
 \item{y}{an \eqn{n} vector, assumed multivariate normal with mean \eqn{\mu}
@@ -28,10 +37,9 @@ Not needed if \code{Sigma_eta} is given.}
 
 \item{eta_mu}{the scalar \eqn{\eta^{\top}\mu}.}
 
-\item{lower.tail}{logical; if TRUE (default), probabilities are
-    \eqn{P[X \le x]} otherwise, \eqn{P[X > x]}.}
+\item{lower.tail}{logical; if TRUE (default), probabilities are P[X <= x] otherwise, P[X > x].}
 
-\item{log.p}{logical; if TRUE, probabilities p are given as log(p).}
+\item{log.p}{logical; if TRUE, probabilities p are returned as log(p).}
 }
 \value{
 The CDF.
@@ -64,7 +72,8 @@ with application to the Lasso." Ann. Statist. 44, no. 3 (2016): 907-927.
 doi:10.1214/15-AOS1371. \url{https://arxiv.org/abs/1311.6238}
 }
 \seealso{
-the confidence interval function, \code{ci_connorm}.
+the confidence interval function, \code{ci_connorm},
+the MLE function, \code{mle_connorm}.
 }
 \author{
 Steven E. Pav \email{shabbychef@gmail.com}
